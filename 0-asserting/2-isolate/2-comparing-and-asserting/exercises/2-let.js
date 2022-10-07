@@ -8,13 +8,13 @@ let fruit = 'banana';
 let desert = 'cake';
 let topping = 'frosting';
 
-_;
-console.assert(desert === 'chocolate cake', 'Test 1');
+desert = 'chocolate' + desert;
+console.assert(desert === 'chocolatecake', 'Test 1');
 
-desert = desert + ' with ' + topping;
-console.assert(desert === _, 'Test 2');
+desert = desert + 'with' + topping;
+console.assert(desert === 'chocolatecakewithfrosting', 'Test 2');
 
-_;
-console.assert(desert === ,'Test 3');
+desert = desert + 'and' + fruit;
+console.assert(desert === 'chocolatecakewithfrostingandbanana','Test 3');
 
 console.log('-- end --');
