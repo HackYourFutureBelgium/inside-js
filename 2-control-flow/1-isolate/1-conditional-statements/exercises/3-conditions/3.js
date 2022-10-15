@@ -10,13 +10,13 @@ console.log('-- begin --');
 //  try to find as many as you can
 //  what do these solutions have in common?
 
-const value1 = '';
-const value2 = -1;
-let path = '';
+const value1 = '';//empty string
+const value2 = -1;//number
+let path = '';//empty string
 
-if (_) {
-  path = 'if';
-} else if (_) {
+if (Boolean(value1) === Boolean(!value2)) {
+  path = 'if';    //--must to be true
+} else if (Number(value1) === Number(value2)) {
   path = 'else if';
 } else {
   path = 'else';
@@ -24,4 +24,5 @@ if (_) {
 
 console.assert(path === 'if', 'path should be "if"');
 
+console.log(path);
 console.log('-- end --');

@@ -12,16 +12,18 @@ console.log('-- begin --');
 
 const value1 = null;
 const value2 = 400;
-let path = '';
+let path = '';      // 
 
-if (_) {
+if (value1 === value2) {
   path = 'if';
-} else if (_) {
+} else if (Boolean(!value1) === Boolean(value2)) {   //---------
   path = 'else if';
 } else {
   path = 'else';
 }
 
 console.assert(path === 'else if', 'path should be "else if"');
+
+console.log(path);
 
 console.log('-- end --');

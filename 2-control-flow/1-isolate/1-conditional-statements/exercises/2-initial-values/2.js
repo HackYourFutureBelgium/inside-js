@@ -9,18 +9,19 @@ console.log('-- begin --');
 //  what do all the solutions have in common?
 // or maybe the asserted path is unreachable!
 
-const value1 = _;
-const value2 = _;
+const value1 = 5; //number 5
+const value2 = '5'; //string 5
 let path = '';
 
-if (value1 === value2) {
+if (value1 === value2) { //false
   path = 'if';
-} else if (typeof value1 === typeof value2) {
+} else if (typeof value1 === typeof value2) {  //false
   path = 'else if 1';
-} else if (Number(value1) === Number(value2)) {
+} else if (Number(value1) === Number(value2)) { // value of the number must be same to the other 
   path = 'else if 2';
 }
 
 console.assert(path === 'else if 2');
+console.log(path);
 
 console.log('-- end --');

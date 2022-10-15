@@ -5,20 +5,20 @@
 console.log('-- begin --');
 
 const word = 'pitsicola';
+//           '012345678'
 
 let index = -1;
-while (index < _._) {
+while (index < word.length) {
   index += 1;
 
   // skip characters with odd indexes
-  if (index % _ !== _) {
-    _;
+  if (index % 2 !== 0) {
+    continue;
   }
 
   const nextLetter = word[index];
   console.log(index + ': ' + nextLetter); // p, t, i, o, a
 }
 
-console.assert(_ === _._, 'index should be the same as the word length');
 
 console.log('-- end --');

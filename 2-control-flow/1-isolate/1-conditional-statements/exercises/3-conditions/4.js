@@ -10,21 +10,24 @@ console.log('-- begin --');
 //  try to find as many as you can
 //  what do these solutions have in common?
 
-const value1 = '200';
-const value2 = 200;
-const value3 = false;
+const value1 = '200';//string
+const value2 = 200; // number
+const value3 = false;//boolean
 let path = '';
 
-if (_) {
+// i have to use truethy and falsey using && and ||
+
+if ((value1 || value3) && value3) {
   path = 'if';
-} else if (_) {
+} else if ((value1 === value2)||value3) {
   path = 'else if 1';
-} else if (_) {
-  path = 'else if 2';
+} else if ((value1 && value3) || value2) {
+  path = 'else if 2'; // ----must to be true
 } else {
   path = 'else';
 }
 
 console.assert(path === 'else if 2', 'path should be "else if 2"');
+console.log(path)
 
 console.log('-- end --');

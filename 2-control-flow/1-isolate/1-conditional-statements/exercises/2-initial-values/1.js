@@ -9,16 +9,17 @@ console.log('-- begin --');
 //  what do all the solutions have in common?
 // or maybe the asserted path is unreachable!
 
-const value1 = _;
-const value2 = _;
+const value1 = false;  //boolien  
+const value2 = true;   //boolien
 let path = '';
 
-if (value1 && !value2) {
+if (value1 && !value2) { // false
   path = 'if';
-} else if (!value1 || !value2) {
-  path = 'else if';
+}else if (!value1 || !value2) {  //true
+   path = 'else if';
 }
 
 console.assert(path === 'else if');
+console.log(path);
 
 console.log('-- end --');
