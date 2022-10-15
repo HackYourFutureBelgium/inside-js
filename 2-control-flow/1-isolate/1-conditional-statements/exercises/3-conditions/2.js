@@ -14,9 +14,9 @@ const value1 = null;
 const value2 = 400;
 let path = '';
 
-if (_) {
+if (value1 === false && !value2 === false ) {
   path = 'if';
-} else if (_) {
+} else if (!value1 === true && !value2 === false) {
   path = 'else if';
 } else {
   path = 'else';

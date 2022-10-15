@@ -14,7 +14,7 @@ const value1 = 'hello';
 const value2 = false;
 let path = '';
 
-if (_) {
+if (value1 === true && !value2 === true) {
   path = 'if';
 } else {
   path = 'else';
@@ -23,3 +23,4 @@ if (_) {
 console.assert(path === 'else', 'path should be "else"');
 
 console.log('-- end --');
+

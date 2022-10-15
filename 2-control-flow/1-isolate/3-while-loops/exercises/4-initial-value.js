@@ -5,6 +5,7 @@
 console.log('-- begin --');
 
 /* Initial Value
+---Thomas Note : this is an infinite loop---
 
   write the initial value for sum to pass the assertion
 
@@ -19,7 +20,7 @@ console.log('-- begin --');
   how many can you find?
   what do all the correct answers have in common?
 */
-let sum = _;
+let sum = 0;
 
 while (sum < 100) {
   if (sum % 2 === 0) {
