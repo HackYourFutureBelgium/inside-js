@@ -1,6 +1,9 @@
 /**
  *
  */
+
+`use strict`;
+
 export const keepLongStrings = (strings = [], long = 5) => {
   const longStrings = [];
   for (const string of strings) {

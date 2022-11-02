@@ -10,10 +10,11 @@ console.log('-- begin --');
  * @_ {_} [_=_] - _
  * @_ {_}  _
  */
-const isPalindrome = (toCheck = '') => {
-  let reversed = '';
+const isPalindrome = (toCheck = '') => { //we create an array
+  let reversed = '';                     // we declare and assigne to '' 
   for (const character of toCheck) {
-    reversed = character + reversed;
+    reversed = character + reversed;     //we create a for - of loop
+    
   }
   return toCheck === reversed;
 };

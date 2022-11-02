@@ -34,16 +34,16 @@ const _3_actual = countCharacter('BANANA', 'A');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 const _4_expect = -1;
-const _4_actual = countCharacter('apple', 'ap');
+const _4_actual = countCharacter('apple', 'ap');// becouse toCheck is true so by defoult the first function is true we only have the return value   of -1
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 // test the default parameters
 const _5_expect = -1;
-const _5_actual = countCharacter('hello');
+const _5_actual = countCharacter('hello');// becouse toCheck is not defined so by defoult the first function is true we only have the return value  of -1
 console.assert(_5_actual === _5_expect, 'Test 5: second default parameter');
 
 const _6_expect = -1;
-const _6_actual = countCharacter();
+const _6_actual = countCharacter(); // becouse toCheck is not defined so by defoult the first function is true we only have the return value  of -1
 console.assert(_6_actual === _6_expect, 'Test 6: both default parameters');
 
 console.log('-- end --');
