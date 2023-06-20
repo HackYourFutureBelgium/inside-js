@@ -27,11 +27,11 @@ let repeatedString = '';
   used to count the number of times the string has been repeated
 */
 let i = 0;
-while (_) {
-  repeatedString = _;
+while (i < 5) {
+  repeatedString  += toRepeat + i;
+  i++;
   console.log(repeatedString);
-
-  _; // i should grow by 1
+ // i should grow by 1
 }
 
 console.assert(
