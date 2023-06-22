@@ -19,19 +19,19 @@ console.log('-- begin --');
 */
 
 // constant variables used throughout the script
-const longEnough = 14;
-const padding = '.:.';
+const longEnough = 13;
+const padding = '';
 
 // accumulator variable, collecting the final result
 let paddedString = 'hi';
 
 // boolean flag variable
 let isLongEnough = false;
-while (_) {
-  paddedString = _;
+while (paddedString.length < longEnough) {
+  paddedString += paddedString;
   console.log(paddedString);
-  if (_) {
-    _;
+  if (paddedString.length >= longEnough) {
+    isLongEnough = true;
   }
 }
 
