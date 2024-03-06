@@ -87,14 +87,14 @@ output, and defining user interactions with event listeners.
 
 ```html
 <div>
-	<button id="echo-button">echo</button>
+ <button id="echo-button">echo</button>
 </div>
 
 <script>
-	// --- save important DOM elements to variables ---
-	const echoButtonEl = document.getElementById('echo-button');
+ // --- save important DOM elements to variables ---
+ const echoButtonEl = document.getElementById('echo-button');
 
-	console.log(echoButtonEl);
+ console.log(echoButtonEl);
 </script>
 ```
 
@@ -111,20 +111,20 @@ the syntax below and will have more freedom when writing your programs.
 
 ```html
 <div>
-	<button id="echo-button">echo</button>
+ <button id="echo-button">echo</button>
 </div>
 
 <script>
-	// --- save important DOM elements to variables ---
-	const echoButtonEl = document.getElementById('echo-button');
+ // --- save important DOM elements to variables ---
+ const echoButtonEl = document.getElementById('echo-button');
 
-	// --- add event listeners + handlers ---
-	// you can just use this syntax for now without understanding it
-	//  soon you will learn about functions and callbacks
-	echoButtonEl.addEventListener('click', () => {
-		console.log('hello developer');
-		alert('hello user');
-	});
+ // --- add event listeners + handlers ---
+ // you can just use this syntax for now without understanding it
+ //  soon you will learn about functions and callbacks
+ echoButtonEl.addEventListener('click', () => {
+  console.log('hello developer');
+  alert('hello user');
+ });
 </script>
 ```
 
@@ -137,22 +137,22 @@ module's examples and exercises.
 
 ```html
 <div>
-	<input id="user-text" />
-	<br />
-	<button id="echo-button">echo</button>
+ <input id="user-text" />
+ <br />
+ <button id="echo-button">echo</button>
 </div>
 
 <script>
-	// --- save important DOM elements to variables ---
-	const userTextEl = document.getElementById('user-text');
-	const echoButtonEl = document.getElementById('echo-button');
+ // --- save important DOM elements to variables ---
+ const userTextEl = document.getElementById('user-text');
+ const echoButtonEl = document.getElementById('echo-button');
 
-	// --- add event listeners + handlers ---
-	echoButtonEl.addEventListener('click', () => {
-		const userInput = userTextEl.value;
-		console.log(userInput);
-		alert(userInput);
-	});
+ // --- add event listeners + handlers ---
+ echoButtonEl.addEventListener('click', () => {
+  const userInput = userTextEl.value;
+  console.log(userInput);
+  alert(userInput);
+ });
 </script>
 ```
 
@@ -164,29 +164,29 @@ information to a user with the DOM, and more than enough for this module.
 
 ```html
 <div>
-	<input id="user-text" />
-	<br />
-	<button id="echo-button">echo</button>
+ <input id="user-text" />
+ <br />
+ <button id="echo-button">echo</button>
 
-	<hr />
+ <hr />
 
-	<pre id="display-zone"></pre>
+ <pre id="display-zone"></pre>
 </div>
 
 <script>
-	// --- save important DOM elements to variables ---
-	const userTextEl = document.getElementById('user-text');
-	const echoButtonEl = document.getElementById('echo-button');
-	s;
-	const displayZoneEl = document.getElementById('display-zone');
+ // --- save important DOM elements to variables ---
+ const userTextEl = document.getElementById('user-text');
+ const echoButtonEl = document.getElementById('echo-button');
+ s;
+ const displayZoneEl = document.getElementById('display-zone');
 
-	// --- add event listeners + handlers ---
-	echoButtonEl.addEventListener('click', () => {
-		const userInput = userTextEl.value;
-		console.log(userInput);
+ // --- add event listeners + handlers ---
+ echoButtonEl.addEventListener('click', () => {
+  const userInput = userTextEl.value;
+  console.log(userInput);
 
-		displayZoneEl.innerText = userTextEl.value;
-	});
+  displayZoneEl.innerText = userTextEl.value;
+ });
 </script>
 ```
 
@@ -205,10 +205,10 @@ Reverse-engineering exercises will have the solution in a file named
 `script.re.js`. `.re` stands for "reverse-engineer and it's just there for
 humans to know the file's purpose:
 
-```
+```markdown
 /exercise-name
-	/index.html
-	/script.js
-	/script.re.js
-	/styles.css
+ /index.html
+ /script.js
+ /script.re.js
+ /styles.css
 ```

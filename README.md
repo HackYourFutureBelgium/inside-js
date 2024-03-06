@@ -1,9 +1,4 @@
-[<<< Welcome to JS](https://github.com/DeNepo/welcome-to-js) || Inside JS ||
-[Behavior, Strategy, Implementation >>>](https://github.com/DeNepo/behavior-strategy-implementation)
-
 # Inside JS
-
-<!-- need a thing here -->
 
 ---
 
