@@ -3,7 +3,7 @@
 ## Week 1
 
 - [For Loops](./for-loops?--defaults)
-- [Functions & Unit Testing](./functions-and-unit-testing?--defaults)
+- [Functions](./functions-and-unit-testing?--defaults)
 - [Side-Effects](./side-effects?--defaults)
 
 ## Week 2
