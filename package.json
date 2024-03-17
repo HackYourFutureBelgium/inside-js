@@ -11,7 +11,8 @@
 		"lint:ls": "ls-lint",
 		"lint:md": "markdownlint --config ./.markdownlint.jsonc --fix ./ ",
 		"lint:js": "eslint --max-warnings=0 --ext=.js --format=codeframe --format=table",
-		"test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests"
+		"test": "node --experimental-vm-modules node_modules/.bin/jest --passWithNoTests",
+		"study": "lenses2"
 	},
 	"author": "HackYourFutureBelgium",
 	"license": "MIT",
