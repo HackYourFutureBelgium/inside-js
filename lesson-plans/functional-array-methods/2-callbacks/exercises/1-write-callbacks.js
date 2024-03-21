@@ -32,7 +32,7 @@ const check2 = checkIt('Racecar', isPalindrome);
 console.assert(check2 === 'no', 'Test 2');
 
 const check3 = checkIt('-+(*)+-', isPalindrome);
-console.assert(check3 === 'yes', 'Test 3');
+console.assert(check3 === 'no', 'Test 3');
 
 // --- declare and test second callback ---
 
