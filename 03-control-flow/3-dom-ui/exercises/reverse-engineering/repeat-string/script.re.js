@@ -58,7 +58,7 @@ import {
 	readNumber,
 	readString,
 	displayString,
-} from '../../../lib/dom-io/index.js';
+} from '../../../../../lib/dom-io/index.js';
 function _0x4d63(t, n) {
 	const r = _0x364d();
 	return (_0x4d63 = function (t, n) {

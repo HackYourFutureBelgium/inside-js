@@ -19,25 +19,25 @@ console.log('-- begin --');
 
 */
 
-__;
+let x = 'a';
 console.assert(x === 'a', 'Test 1');
 
-__;
+let y = 'b';
 console.assert(y === 'b', 'Test 2');
-
+x = 'a';
 console.assert(x === 'a', 'Test 3');
 
-__;
+let z = '';
 console.assert(z === '', 'Test 4');
-
+y = 'b';
 console.assert(y === 'b', 'Test 5');
 
-__;
+z = 'c';
 console.assert(z === 'c', 'Test 6');
 
-__;
+y += 'd';
 console.assert(y === 'bd', 'Test 7');
-
+x = 'a'
 console.assert(x === 'a', 'Test 8');
 
 console.log('-- end --');

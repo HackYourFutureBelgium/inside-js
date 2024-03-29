@@ -7,7 +7,7 @@ console.log('-- begin --');
 // refactor this code to use && instead of a conditional
 
 // try different values and different types
-const input = _;
+const input = 'pickles';
 const password = 'pickles';
 console.log(input, password);
 

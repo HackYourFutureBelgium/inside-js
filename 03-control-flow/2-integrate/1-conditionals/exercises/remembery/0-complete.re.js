@@ -1,5 +1,4 @@
-// #todo
-
+"use strict";
 'use strict';
 
 alert(

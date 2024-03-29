@@ -66,7 +66,7 @@ import {
 	readNumber,
 	readString,
 	displayString,
-} from '../../../lib/dom-io/index.js';
+} from '../../../../../lib/dom-io/index.js';
 document[_0x1c928d(220) + _0x1c928d(212)](_0x1c928d(227))[
 	_0x1c928d(205) + _0x1c928d(208)
 ](_0x1c928d(217), () => {

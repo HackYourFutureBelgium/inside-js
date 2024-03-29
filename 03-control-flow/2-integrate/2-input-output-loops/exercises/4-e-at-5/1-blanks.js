@@ -2,24 +2,48 @@
 
 'use strict';
 
-let validInput = '';
-while (true) {
-  const userInput = prompt('enter anything with "e" or "E" as the 5th letter');
-  console.log('userInput:', typeof userInput, userInput);
+let userInput = '';
+let userConfirmed = false;
+while (!userConfirmed) {
+  userInput = prompt('enter a word to filter:');
 
-  // make sure the user entered something
-  ___;
-
-  // make sure it is long enough to have an "e" in the 5th letter
-  ___;
-
-  // check if the 5th character is an "e" or "E"
-  if (_) {
-    validInput = userInput;
-    break;
+  if (userInput === '' || userInput === null) {
+    alert('nope, enter something');
+    continue;
   }
 
-  alert('input has no "e" or "E" as the 5th character');
+  const whiteSpaceRegex = /\s/g;
+  if (whiteSpaceRegex.test(userInput)) {
+    alert("words can't have white space");
+    continue;
+  }
+
+  const confirmMessage =
+    'do you want to filter this word?\n\n' + '- "' + userInput + '"';
+  const userConfirm = confirm(confirmMessage);
+  if (userConfirm) {
+    break;
+  } else {
+    continue;
+  }
 }
 
-alert('done: "' + validInput + '"');
+const removeVowels = confirm(`what would you like to remove from "${userInput}"?
+- ok: vowels
+- cancel: consonants
+`);
+
+const toRemove = removeVowels ? 'vowels' : 'consonants';
+
+let filteredInput = '';
+for (const character of userInput) {
+  const lowerCaseCharacter = character.toLowerCase();
+  if (toRemove === 'vowels') {
+    filteredInput += lowerCaseCharacter.replace(/[aeiou]/g, '');
+  } else {
+    filteredInput += lowerCaseCharacter.replace(/[bcdfghklmnpqrstvwxyz]/g, '');
+  }
+}
+
+const finalMessage = `"${userInput}" -> "${filteredInput}"`;
+alert(finalMessage);

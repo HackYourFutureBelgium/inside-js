@@ -1,6 +1,4 @@
-// #todo
 
-/* ===== import functions ===== */
 
 import { search } from '../utils/search.js';
 

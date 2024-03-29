@@ -2,7 +2,7 @@
 
 /* ===== import functions ===== */
 
-// import { __ } from '../utils/__.js';
+import { average } from '../utils/average-of-numbers.js';
 
 /* ===== main program (use functions) ===== */
 
@@ -37,13 +37,9 @@ while (true) {
 console.log(numbers);
 
 // -- calculate the average --
-/* == BEGIN: refactor the averaging logic == */
-let theAverage = 0;
-for (let i = 0; i < numbers.length; i++) {
-  const number = numbers[i];
-  theAverage += number / numbers.length;
-}
-/* == END: refactoring == */
+
+let theAverage = average(numbers);
+
 console.log(theAverage);
 
 // -- build the final message --

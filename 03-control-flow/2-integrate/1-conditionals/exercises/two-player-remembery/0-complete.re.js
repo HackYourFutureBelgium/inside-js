@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 const instructions = `Two-Player Remembery

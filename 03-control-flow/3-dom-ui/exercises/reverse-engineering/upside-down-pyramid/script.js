@@ -1,4 +1,7 @@
 'use strict';
+import {readString, displayString} from '../../../../../lib/dom-io/index.js';
+document.getElementById('pyramid-it').addEventListener('click', () => {
+  debugger;
 
 /* Upside-Down Pyramid
 
@@ -8,20 +11,18 @@
 
 // --- saved DOM Elements ---
 
-_;
 
-// --- user interaction ---
+  // read user text
+  const text = readString('to-pyramid');
 
-_.addEventListener('click', () => {
-	debugger;
+  // create the pyramid
+  let pyramid = '';
 
-	// read user text
+  for (let i = 0; i < text.length; i++) {
+    let row = text.slice(i) + '\n';
+    pyramid += row;
+  }
 
-	// create the pyramid
-
-	for (_; _; _) {
-		for (_; _; _) {}
-	}
-
-	// display the pyramid
+  // display the pyramid
+  displayString('pyramided', pyramid);
 });

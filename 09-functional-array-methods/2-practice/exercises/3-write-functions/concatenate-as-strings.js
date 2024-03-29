@@ -6,4 +6,7 @@
  * @param {Array} arr - the array of values to filter
  * @returns {Array} - a new array with no strings
  */
-export const concatenateAsStrings = (arr = []) => {};
+export const concatenateAsStrings = (arr = []) => {
+  return arr.reduce((acc, item) => acc + String (item), '');
+  
+};

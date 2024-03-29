@@ -17,7 +17,7 @@ export const sentenceIt = (arr) => {
   };
 
   // fill in the array method names and callbacks
-  const sentenceIt = arr.__(__).__(__, __);
+  const sentenceIt = arr.filter(isWord).reduce(combineWithSpace,'');
 
   return sentenceIt;
 };
